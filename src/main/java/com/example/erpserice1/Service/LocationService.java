@@ -36,6 +36,7 @@ public class LocationService implements LocationInterface {
 
     @Override
     public Location createLocation(Location location) {
+        System.out.println("jj");
         return locationReposotory.save(location);
     }
 }
