@@ -22,7 +22,7 @@ jobs:
       - name: Clear Docker build cache
         run: docker builder prune -a -f
       - name: Build docker image
-        run: docker build -t oussama020899/erpspringboot .
+        run: docker build -t oussama020899/erpspringboot --no-cache .
       - name: Publish image to docker hub
         run: docker push oussama020899/erpspringboot:latest
 
