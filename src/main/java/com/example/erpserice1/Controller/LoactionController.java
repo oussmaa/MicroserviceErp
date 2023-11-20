@@ -21,6 +21,7 @@ public class LoactionController {
 
     @RequestMapping(method = RequestMethod.PUT)
     public Location modifierLocation(@RequestBody Location a) {
+        System.out.println("ffff");
         return locationService.modifierLocation(a);
     }
 
