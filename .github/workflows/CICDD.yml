@@ -35,4 +35,4 @@ jobs:
       - name: sudo Delete old container
         run:  sudo docker rm -f erpspringboot-container
       - name: Run docker container
-        run:  sudo docker run -d -p 7080:7080 --name erpspringboot-container oussama020899/erpspringboot
+        run:  sudo docker run -d -p 8080:8080 --name erpspringboot-container oussama020899/erpspringboot
