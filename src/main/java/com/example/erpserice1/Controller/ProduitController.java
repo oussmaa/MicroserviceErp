@@ -38,8 +38,9 @@ public class ProduitController {
         produitService.deleteProduit(id);
     }
     @RequestMapping(method = RequestMethod.GET)
-    public List<Produit> getAllProduit() {
-        return produitService.getAllProduit();
+    public String getAllProduit() {
+        //r//eturn produitService.getAllProduit();
+        return  "I love u ";
     }
     @RequestMapping(value="/{id}",method = RequestMethod.GET)
     public List<Produit> getProduitById(@PathVariable("id") String id) {
